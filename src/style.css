@@ -1,3 +1,13 @@
+@font-face {
+font-family: 'roboto';
+src: url('./assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+font-family: 'playfair display';
+src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
 html{
     display: flex;
     flex-direction: column;
@@ -34,10 +44,12 @@ main::after{
 .overlayText{
     position: absolute;
     bottom: 0rem;
-    left: 10px;
+    left: 20px;
     color: white;
 
-    font-family: 'Times New Roman';
+    font-family: 'playfair display';
+    font-weight: 100;
+    line-height: calc(7rem + 5px);
 
     font-size: 7rem;
     text-align: left;
