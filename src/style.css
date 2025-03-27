@@ -26,14 +26,9 @@ main{
     display: flex;
     flex-direction: column;
     flex: 1;
-    background: linear-gradient(332deg, transparent 60%, rgb(3 73 83) 40%);
     padding: clamp(15px, 8vw, 20%);
-}
 
-main::after{
-    content: "";
-    z-index: 1;
-    background: linear-gradient(332deg, transparent 60%, black 40%);
+    background: linear-gradient(332deg, transparent 80%, rgb(23, 106, 119) 20%);
 }
 
 #picture {
@@ -43,8 +38,8 @@ main::after{
 
 .overlayText{
     position: absolute;
-    bottom: 0rem;
-    left: 20px;
+    bottom: 5px;
+    left: 15px;
     color: white;
 
     font-family: 'playfair display';
@@ -56,17 +51,95 @@ main::after{
     margin: 0px;
 }
 
-#heading{
-
+#aboutMe h1, #myWork h1, #contactMe h1{
+    text-align: center;
+    font-family: 'playfair display';
+    font-weight: 200;
+    font-size: 3rem;
+    margin-bottom: 0px;
 }
 
-#picture{
+#myWork h1{
+    margin-bottom: 1rem;
+}
 
+p{
+    font-size: 1.5rem;
+    font-family: 'roboto';
+    color: rgb(18, 18, 18);
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    height: 12vw;
+    width: auto;
+    margin: 0px 10px;
 }
 
 img, picture {
-    height: 100%;
     width: 100%;
       
     object-fit: cover;
+}
+
+#contactMe{
+    padding: 0rem 2rem;
+    padding-bottom: 3rem;
+}
+
+footer{
+    background-color: rgb(23, 106, 119);
+}
+
+#projectsGrid{
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f9f9f9;
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    width: 100%;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectHeading {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.projectTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.projectGitLink{
+    height: 1.4rem !important;
+}
+
+.projectDescription {
+    font-size: 0.9rem;
+    color: #555;
 }
